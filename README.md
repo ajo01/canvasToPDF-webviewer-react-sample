@@ -10,7 +10,7 @@ This repo is specifically designed for any users interested in integrating WebVi
 
 ## Demo
 
-In the App.js file, you will see several sample draw functions already implemented to see how the canvasToPDF api can be used.
+In the App.js file, you will see several sample draw functions already implemented to see how the CanvasToPDF api can be used.
 
 There are 5 sample draw functions:
 
@@ -20,6 +20,7 @@ There are 5 sample draw functions:
 - drawHatch
 - drawTiger
 
+#### Gradient Pattern Annotation
 ```js
 const blob = await canvasToPDF(drawGradientCircles, {
   width: rectangleAnnot.Width,
@@ -27,14 +28,21 @@ const blob = await canvasToPDF(drawGradientCircles, {
 });
 ```
 
+<img width="552" alt="Screen Shot 2022-08-25 at 3 26 49 PM" src="https://user-images.githubusercontent.com/70789275/186779919-5678b462-69f0-47a7-98c9-17e9aa655319.png">
+
+
 You can use them by replacing the above code to the below code like this:
 
+
+#### Hatch Annotation
 ```js
 const blob = await canvasToPDF(drawHatch, {
   width: rectangleAnnot.Width,
   height: rectangleAnnot.Height,
 });
 ```
+
+<img width="558" alt="Screen Shot 2022-08-25 at 3 27 36 PM" src="https://user-images.githubusercontent.com/70789275/186779935-8fff6c6b-16d4-408c-a7d7-96df6c36b82d.png">
 
 ## Initial setup
 
