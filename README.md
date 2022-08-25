@@ -10,7 +10,31 @@ This repo is specifically designed for any users interested in integrating WebVi
 
 ## Demo
 
-You can explore all of the functionality in our [showcase](https://www.pdftron.com/webviewer/demo/).
+In the App.js file, you will see several sample draw functions already implemented to see how the canvasToPDF api can be used.
+
+There are 5 sample draw functions:
+
+- drawRect
+- drawGradientCircles
+- drawTriangles
+- drawHatch
+- drawTiger
+
+```js
+const blob = await canvasToPDF(drawGradientCircles, {
+  width: rectangleAnnot.Width,
+  height: rectangleAnnot.Height,
+});
+```
+
+You can use them by replacing the above code to the below code like this:
+
+```js
+const blob = await canvasToPDF(drawHatch, {
+  width: rectangleAnnot.Width,
+  height: rectangleAnnot.Height,
+});
+```
 
 ## Initial setup
 

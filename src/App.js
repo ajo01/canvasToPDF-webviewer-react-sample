@@ -130,7 +130,7 @@ const App = () => {
               var y = row * rowHeight;
               var clr;
 
-              if (row % 2 != 0) {
+              if (row % 2 !== 0) {
                 x -= halfSide;
               }
 
@@ -161,7 +161,7 @@ const App = () => {
           }
         };
 
-        const blob = await canvasToPDF(drawTriangles, {
+        const blob = await canvasToPDF(drawGradientCircles, {
           width: rectangleAnnot.Width,
           height: rectangleAnnot.Height,
         });
