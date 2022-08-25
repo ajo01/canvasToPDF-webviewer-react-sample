@@ -1,10 +1,12 @@
-# WebViewer - React sample
+# WebViewer - React - CanvasToPDF sample
 
 [WebViewer](https://www.pdftron.com/documentation/web/) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
 ![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
 
-This repo is specifically designed for any users interested in integrating WebViewer into React project. You can watch [a video here](https://youtu.be/bVhWXuLSL0k) to help you get started.
+CanvasToPDF is a PDF Library that allows users to create vector appearances with Canvas API. In other words, enable you to export your HTML Canvas to a vector quality PDF.
+
+This repo is specifically designed for any users interested in integrating WebViewer and CanvasToPDF into React project.
 
 ## Demo
 
@@ -17,7 +19,7 @@ Before you begin, make sure your development environment includes [Node.js](http
 ## Install
 
 ```
-git clone https://github.com/PDFTron/webviewer-react-sample.git
+git clone https://github.com/ajo01/canvasToPDF-webviewer-react-sample.git
 cd webviewer-react-sample
 npm install
 ```
@@ -28,7 +30,7 @@ npm install
 npm start
 ```
 
-After the app starts, you will be able to see WebViewer running on `localhost:3000`.
+After the app starts, you will be able to see WebViewer running on `localhost:3006`.
 
 ## Build
 
@@ -37,6 +39,7 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 To test the build directory locally you can use [serve](https://www.npmjs.com/package/serve) or [http-server](https://www.npmjs.com/package/http-server). In case of serve, by default it strips the .html extension stripped from paths. We added serve.json configuration to disable cleanUrls option.
 
 ## GitHub Pages
+
 You can deploy your app to [GitHub Pages](https://pdftron.github.io/webviewer-react-sample/). To do so, make sure to update paths accordingly, for example, to deploy on `pdftron.github.io/webviewer-react-sample`, modify the `path`:
 
 ```
