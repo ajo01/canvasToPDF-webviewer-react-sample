@@ -11,7 +11,7 @@ const App = () => {
     WebViewer(
       {
         path: "/webviewer/lib",
-        initialDoc: "/files/PDFTRON_about.pdf",
+        initialDoc: "/files/blank.pdf",
       },
       viewer.current
     ).then(async (instance) => {
@@ -47,8 +47,8 @@ const App = () => {
         };
 
         const drawGradientCircles = (ctx) => {
-          for (let i = 0; i < 12; i++) {
-            for (let j = 0; j < 12; j++) {
+          for (let i = 0; i < 15; i++) {
+            for (let j = 0; j < 15; j++) {
               ctx.strokeStyle = `rgb(
             0,
             ${Math.floor(255 - 42.5 * i)},
